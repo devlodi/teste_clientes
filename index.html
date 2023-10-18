@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Supabase Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@latest/dist/umd/supabase.min.js"></script>
 </head>
+
 <body>
+    <form id="cliente-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+        <input type="submit" value="Adicionar Cliente">
+    </form>
 
-  <h1>Adicionar Cliente</h1>
-
-  <form id="add-client-form">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name">
-    <br>
-
-    <label for="phone">Telefone:</label>
-    <input type="text" id="phone" name="phone">
-    <br>
-
-    <input type="submit" value="Adicionar">
-  </form>
-
- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@latest/dist/umd/supabase.min.js"></script>
-<script src="script.js"></script>
-
+    <script type="module" src="script.js"></script>
 
 </body>
 </html>
